@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 기본서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 레이아웃서식 -->
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <!-- 제이쿼리라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- 제이쿼리ui -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+    <title>정하영 포트폴리오</title>
+    <style>
+        .background {
+            background-color: #0D3058;
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background>div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            z-index: 9999;
+        }
+
+        .background>div>p {
+            line-height: 1.5rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .background>div>a {
+            color: #fff;
+            display: block;
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        .background>div>a:hover {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        @keyframes light1 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes light2 {
+            0% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 0.9
+            }
+
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        img:nth-child(2),
+        img:nth-child(5),
+        img:nth-child(7) {
+            transform: scale(0.9);
+            z-index: 3;
+            animation: light1 infinite 4s;
+        }
+
+        img:nth-child(2) {
+            top: 10%;
+            right: 15%;
+        }
+
+        img:nth-child(5) {
+            top: 40%;
+            left: 10%;
+        }
+
+        img:nth-child(7) {
+            bottom: 15%;
+            right: 40%;
+        }
+
+        img:nth-child(3),
+        img:nth-child(6) {
+            transform: scale(0.8);
+            z-index: 3;
+            animation: light1 infinite 3s;
+            animation-delay: 1s;
+        }
+
+        img:nth-child(3) {
+            top: 20%;
+            left: 40%;
+        }
+
+        img:nth-child(6) {
+            bottom: 25%;
+            right: 8%;
+        }
+
+        img:nth-child(4),
+        img:nth-child(8) {
+            transform: scale(0.7);
+            z-index: 3;
+            animation: light2 infinite 5s;
+        }
+
+        img:nth-child(4) {
+            top: 10%;
+            left: 10%;
+        }
+
+        img:nth-child(8) {
+            bottom: 10%;
+            left: 20%;
+
+        }
+
+        img:nth-child(9) {
+            opacity: 0.8;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: light3 infinite 8s;
+        }
+
+        @keyframes light3 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .before,
+        .after {
+            display: inline-block;
+            height: 90px;
+            top: 50%;
+            left: 50%;
+            background-color: #0D3058;
+            position: absolute;
+            z-index: 2;
+            animation-delay: 5s;
+        }
+
+        .before {
+            animation: ani infinite 4s linear;
+            position: relative;
+        }
+
+        .before::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 90px;
+            top: 30%;
+            right: -310px;
+            border-radius: 50%;
+            border-left: 70px solid #0D3058;
+        }
+
+        @keyframes ani {
+            0% {
+                top: 50%;
+                left: 50%;
+                width: 900px;
+                transform: translate(-50%, -50%) rotate(-27deg);
+            }
+
+            70% {
+                top: 95%;
+                left: 1%;
+                width: 9px;
+                transform: translate(-50%, -50%) rotate(-27deg);
+            }
+
+            100% {
+
+                top: 95%;
+                left: 1%;
+                width: 9px;
+                transform: translate(-50%, -50%) rotate(-27deg);
+            }
+
+        }
+
+        .after {
+            animation: ani1 infinite 4s linear;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        @keyframes ani1 {
+            0% {
+                width: 9px;
+                top: 5%;
+                left: 94%;
+                transform: translate(-50%, -50%) rotate(-27deg);
+            }
+
+            100% {
+                top: 50%;
+                left: 50%;
+                width: 900px;
+                transform: translate(-50%, -50%) rotate(-27deg);
+            }
+
+        }
+    </style>
+    <script>
+        function window_onload() {
+            setTimeout('go_url()', 4000);
+        }
+        function go_url() {
+            location.href = './main.html'
+        }
+
+        window_onload();
+    </script>
+</head>
+
+<body>
+    <div class="background">
+        <div>
+            <p><b>정하영 포트폴리오에 방문해주신 모든 분들을 환영합니다. :)</b><br><br>
+                이 페이지는 해상도 1920*920에 최적화되어 있습니다. 웹표준, 웹접근성에 준수합니다.<br>
+                copyright&amp;copy; 2024 0000 allrights reserved.</p><br><br>
+
+            <a href="./main.html" title="메인화면으로가기"><i class="	fas fa-hand-point-right"></i>&nbsp;&nbsp;2024 정하영 포트폴리오
+                바로가기</a>
+        </div>
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/star.png" alt="star">
+        <img src="./images/intro_s_star.png" alt="shooting_star">
+        <span class="before">&nbsp;</span>
+        <span class="after">&nbsp;</span>
+    </div>
+
+</body>
