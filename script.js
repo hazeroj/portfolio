@@ -46,22 +46,22 @@ $(document).ready(function () {
 
 
         // 스크롤 내리면center등장
-        if (scroll >= 400) {
+        if (scroll >= windowHeight/2) {
             $('#about .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 1300) {
+        if (scroll >= windowHeight/2+windowHeight) {
             $('#pf1 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 2100) {
+        if (scroll >= windowHeight/2+windowHeight*2) {
             $('#pf2 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 3100) {
+        if (scroll >= windowHeight/2+windowHeight*3) {
             $('#pf3 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 4100) {
+        if (scroll >= windowHeight/2+windowHeight*4) {
             $('#pf4 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 5000) {
+        if (scroll >= windowHeight/2+windowHeight*5) {
             $('#design .center').animate({ 'left': '0px' }, 1000)
         };
 
