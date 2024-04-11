@@ -8,6 +8,7 @@ $(document).ready(function () {
     const design = $('#design div')
     const gnb = $('header')
     const coffee = $('#pf1 .left a:not(:last-child)')
+    const windowHeight = $(window).height();
 
 
     r_nav.hide()
@@ -39,28 +40,28 @@ $(document).ready(function () {
         }
 
         // 스크롤에 따라 내비게이션 색상 변경
-        let i = Math.floor(scroll / 919 + 0.6);
+        let i = Math.floor(scroll / windowHeight + 0.6);
 
         r_nav.find('span').eq(i).addClass('act').siblings().removeClass('act')
 
 
         // 스크롤 내리면center등장
-        if (scroll >= 400) {
+        if (scroll >= windowHeight/2) {
             $('#about .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 1300) {
+        if (scroll >= windowHeight/2+windowHeight) {
             $('#pf1 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 2100) {
+        if (scroll >= windowHeight/2+windowHeight*2) {
             $('#pf2 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 3100) {
+        if (scroll >= windowHeight/2+windowHeight*3) {
             $('#pf3 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 4100) {
+        if (scroll >= windowHeight/2+windowHeight*4) {
             $('#pf4 .center').animate({ 'right': '0px' }, 1000)
         }
-        if (scroll >= 5000) {
+        if (scroll >= windowHeight/2+windowHeight*5) {
             $('#design .center').animate({ 'left': '0px' }, 1000)
         };
 
@@ -70,9 +71,9 @@ $(document).ready(function () {
             $(this).addClass('act').siblings().removeClass('act');
 
             let n = $(this).index();
-            console.log(n);
+            // console.log(n);
 
-            $(window).scrollTop(n * 919)
+            $(window).scrollTop(n * windowHeight)
 
             $(this).appendTo()
         });
@@ -152,7 +153,7 @@ $(document).ready(function () {
         console.log(nav_a);
 
         $('html, body').stop().animate({
-            scrollTop: 919 * nav_a
+            scrollTop: windowHeight * nav_a
         }, 500);
     });
 
@@ -173,7 +174,7 @@ $(document).ready(function () {
         console.log(nav_li);
 
         $('html, body').stop().animate({
-            scrollTop: 919 * nav_li
+            scrollTop: windowHeight * nav_li
         }, 500);
     });
 
