@@ -98,17 +98,17 @@ $(document).ready(function () {
     })
     d_l_banner.click(function () {
         d_img.hide();
-        $('.banner').fadeIn();
+        $('.main').fadeIn();
 
     })
     d_l_logo.click(function () {
         d_img.hide();
-        $('.logo').fadeIn();
+        $('.sub').fadeIn();
 
     })
     d_l_pattern.click(function () {
         d_img.hide();
-        $('.pattern').fadeIn();
+        $('.banner').fadeIn();
     })
 
 

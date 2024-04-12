@@ -246,7 +246,7 @@ section:first-child h2 {
     width: 4px;
     height: 45px;
     background-color: #fff;
-    animation: 4s right ease-in;
+    animation: 3.9s right linear;
     z-index: 500;
     opacity: 0;
     border-radius: 5px;
@@ -281,7 +281,7 @@ section:first-child h2 {
     width: 4px;
     height: 45px;
     background-color: #fff;
-    animation: 4s left ease-out;
+    animation: 4s left linear;
     z-index: 500;
     opacity: 0;
     border-radius: 5px;
@@ -349,27 +349,27 @@ section:first-child h2 {
 }
 
 #home h2 span:nth-child(6) {
-    animation: 2.1s hi;
+    animation: 1.8s hi;
 }
 
 #home h2 span:nth-child(7) {
-    animation: 2.3s hi;
+    animation: 2.1s hi;
 }
 
 #home h2 span:nth-child(8) {
-    animation: 2.6s hi;
+    animation: 2.4s hi;
 }
 
 #home h2 span:nth-child(9) {
-    animation: 2.8s hi;
+    animation: 2.7s hi;
 }
 
 #home h2 span:nth-child(10) {
-    animation: 3s hi;
+    animation: 2.9s hi;
 }
 
 #home h2 span:nth-child(11) {
-    animation: 3.2s hi;
+    animation: 3.1s hi;
 }
 
 #home h2 span:nth-child(12) {
@@ -1025,6 +1025,7 @@ table {
 
 .beauty_s_c_3 {
     background-color: #FFF8F2;
+    border: 1px solid rgba(0,0,0,0.2);
 }
 
 .art_m_c {
@@ -1039,6 +1040,7 @@ table {
 
 .art_s_c_2 {
     background-color: #EFEACD;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .art_s_c_3 {
@@ -2229,7 +2231,7 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
     padding: 30px 20px;
 }
 
@@ -2243,7 +2245,7 @@ table {
 
 .modal img {
     margin-top: 50px;
-    max-width: 40vw;
+    /* max-width: 40vw; */
     min-height: 350px;
 }
 
