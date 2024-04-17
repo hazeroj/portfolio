@@ -959,7 +959,7 @@ table {
     text-align: center;
 }
 
-.portfolio .left a {
+.portfolio .left a ,.portfolio .right a {
     display: inline-block;
     line-height: 40px;
     border-radius: 15px;
@@ -971,11 +971,11 @@ table {
 }
 
 
-.portfolio .left img {
+.portfolio .left img, .portfolio .right img {
     margin-bottom: 120px;
     transform: scale(1.15) translateY(50px);
 }
-
+.portfolio .right img {padding-top: 10px;}
 .coffee_m_c {
     background-color: #FCCB26;
 }
@@ -1050,9 +1050,10 @@ table {
 .portfolio .right {
     flex: 1;
     padding: 0px 0px 0px 50px;
+    text-align: center;
 }
 
-.portfolio .right h3 {
+.portfolio .right h3,.portfolio .left h3  {
     text-align: center;
     margin: 0px 0px 10px;
 }
@@ -2231,7 +2232,7 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(255,255,255,0.8);
+    background-color: #fff;
     padding: 30px 20px;
 }
 
@@ -2245,7 +2246,7 @@ table {
 
 .modal img {
     margin-top: 50px;
-    /* max-width: 40vw; */
+    max-width: 40vw;
     min-height: 350px;
 }
 
