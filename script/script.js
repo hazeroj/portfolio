@@ -98,17 +98,17 @@ $(document).ready(function () {
     })
     d_l_banner.click(function () {
         d_img.hide();
-        $('.main').fadeIn();
+        $('.banner').fadeIn();
 
     })
     d_l_logo.click(function () {
         d_img.hide();
-        $('.sub').fadeIn();
+        $('.logo').fadeIn();
 
     })
     d_l_pattern.click(function () {
         d_img.hide();
-        $('.banner').fadeIn();
+        $('.pattern').fadeIn();
     })
 
 
@@ -189,11 +189,11 @@ $(document).ready(function () {
 
     // 포트폴리오 마우스 오버시 텍스트 변경하기
 
-    $('section:not(#pf1) .left>a:nth-child(2)').mouseover(function(){
+    $('#pf2 .left>a:nth-child(2)').mouseover(function(){
         $(this).text('권장해상도 1280px ~ ')
     });
 
-    $('section:not(#pf1) .left>a:nth-child(2)').mouseleave(function(){
+    $('#pf2 .left>a:nth-child(2)').mouseleave(function(){
         $(this).text('PC 바로가기')
     });
 
@@ -205,21 +205,21 @@ $(document).ready(function () {
         $(this).text('App 바로가기')
     });
 
-    $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseover(function () {
-        $(this).text('권장해상도 744px ~')
-    });
+    // $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseover(function () {
+    //     $(this).text('권장해상도 744px ~')
+    // });
 
-    $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseleave(function () {
-        $(this).text('TABLET 바로가기')
-    });
+    // $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseleave(function () {
+    //     $(this).text('TABLET 바로가기')
+    // });
 
-    $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseover(function(){
-        $(this).text('권장해상도 375px ~')
-    });
+    // $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseover(function(){
+    //     $(this).text('권장해상도 375px ~')
+    // });
 
-    $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseleave(function(){
-        $(this).text('MOBILE 바로가기')
-    });
+    // $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseleave(function(){
+    //     $(this).text('MOBILE 바로가기')
+    // });
 
         // 포트폴리오 좌측 a태그 클릭하면 이미지 나오게하기
         coffee.click(function () {

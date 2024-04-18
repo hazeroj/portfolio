@@ -994,6 +994,13 @@ table {
     color: #fff !important;
 }
 
+.caffe_m_c{background-color: #273658; color: #fff;}
+.caffe_s_c{background-color: #F0A7A5;
+}
+.caffe_s_c_2{background-color: #E6383D; color: #fff;}
+.caffe_s_c_3{background-color: #00A6B1; ;}
+
+
 .jeju_m_c {
     background-color: #F28241;
 }
@@ -1047,10 +1054,12 @@ table {
     background-color: #F0D694;
 }
 
+#pf1 .right{
+    text-align: center;}
+
 .portfolio .right {
     flex: 1;
     padding: 0px 0px 0px 50px;
-    text-align: center;
 }
 
 .portfolio .right h3,.portfolio .left h3  {
