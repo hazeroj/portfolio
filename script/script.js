@@ -189,19 +189,19 @@ $(document).ready(function () {
 
     // 포트폴리오 마우스 오버시 텍스트 변경하기
 
-    $('#pf2 .left>a:nth-child(2)').mouseover(function(){
+    $('#pf4 .left>a:nth-child(2)').mouseover(function(){
         $(this).text('권장해상도 1280px ~ ')
     });
 
-    $('#pf2 .left>a:nth-child(2)').mouseleave(function(){
+    $('#pf4 .left>a:nth-child(2)').mouseleave(function(){
         $(this).text('PC 바로가기')
     });
 
-    $('#pf2 .left>a:nth-child(3)').mouseover(function () {
+    $('#pf4 .left>a:nth-child(3)').mouseover(function () {
         $(this).text('권장해상도 375px ~')
     });
 
-    $('#pf2 .left>a:nth-child(3)').mouseleave(function () {
+    $('#pf4 .left>a:nth-child(3)').mouseleave(function () {
         $(this).text('App 바로가기')
     });
 
