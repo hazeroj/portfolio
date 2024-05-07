@@ -205,48 +205,4 @@ $(document).ready(function () {
         $(this).text('App 바로가기')
     });
 
-    // $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseover(function () {
-    //     $(this).text('권장해상도 744px ~')
-    // });
-
-    // $('#pf3 .left>a:nth-child(3),#pf4 .left>a:nth-child(3)').mouseleave(function () {
-    //     $(this).text('TABLET 바로가기')
-    // });
-
-    // $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseover(function(){
-    //     $(this).text('권장해상도 375px ~')
-    // });
-
-    // $('#pf3 .left>a:nth-child(4),#pf4 .left>a:nth-child(4)').mouseleave(function(){
-    //     $(this).text('MOBILE 바로가기')
-    // });
-
-        // 포트폴리오 좌측 a태그 클릭하면 이미지 나오게하기
-        coffee.click(function () {
-            let a = $(this).attr('src');
-            let title = $(this).attr('title');
-
-            console.log(title)
-    
-            let modal =
-                `<div class="modal">
-                <div class="m_center">
-                    <h3>${title}</h3>
-                    <img src="${a}">
-                    <div class="c_btn">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>`
-    
-            $('body').append(modal)
-    
-    
-            $('.c_btn>span').click(function () {
-                $('.modal').fadeOut();
-
-                return false;
-            })
-        });
 });
