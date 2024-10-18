@@ -2273,8 +2273,9 @@ table {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: -30px;
+    top: 50%;
     right: -30px;
+    transform:translateY(-50%)
 }
 
 .modal .c_btn span:first-child {
